@@ -1,0 +1,38 @@
+一,一部分以空行隔开
+二,每个逗号之后隔一个空格
+三,缩进以两个空格隔开
+四,命名规范-----以功能为主
+五,sublime显示中文命令: LD_PRELOAD=/opt/sublime_text/libsublime-imfix.so subl
+六,经常改变的变量将其放入config的配置文件中
+七,处理好哪些东西需要缓存,哪些不需要缓存
+八,善用session和cookie,当某个变量不同而导致页面不同,此时需要考虑是否调用session或cookie
+九,在测试服务器中测试,然后将测试环境换成生产环境,如果无误再转入生产代码
+十,必要的测试环境是必不可少的
+十一,调试采用
+	group :development do
+  	  gem "better_errors"
+  	  gem "binding_of_caller"
+	end
+十二,curl post 方式的格式
+	curl  -d "a=value1&b=value2" "url"
+     通过curl post json数据格式
+	curl "url" -d '{"a":"value1","b":"value2"}'
+十三,通过--skip-assets可以不用生成assets文件
+十四,预编译命令: RAILS_ENV=production bundle exec rake assets:precompile 
+十五,rails中find： 根据id查找，返回一个对象
+            find_by_*： 返回一个对象
+	    find_all_by_*：返回Array
+	    where： 返回ActiveRecord::Relation，操作对象时才执行SQL
+十六,常用的log调试最好不要删除,一旦出现问题可及时发现原因
+十七,css srpite主要应用于小图片,且图片大小不可变的情况下
+十八,scss中使用调用图片的方式采用image-url('')
+十九,如何写出更好代码:一,理解基本设计原则;二,多看别人写的代码(tips:http://www.imooc.com/article/1836;http://www.cnblogs.com/gaohongchen01/p/4535670.html)
+二十,快速学习新领域的知识:一,扩展视野,对新领域有个整体认识;二,针对某一项进行学习,并快速扩展;三,实战训练(最关键一部)
+二十一,代码规则:整理(Seiri),整顿(Seiton),清楚(Seiso),清洁(Seiketsu),身美(Shitsuke)
+二十二,从垂直和水平方向思考程序
+二十三,WireframeSketcher
+二十四,使用插件时注意文件版本是否符合当前开发版本
+二十五,解决不了的问题那就重新看官方文档
+二十六,遇到难题或者重大bug时需要做笔记,并尽量多想一些解决办法
+二十七,关键地方
+
