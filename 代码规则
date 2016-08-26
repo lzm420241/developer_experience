@@ -18,7 +18,7 @@
      通过curl post json数据格式
 	curl "url" -d '{"a":"value1","b":"value2"}'
 十三,通过--skip-assets可以不用生成assets文件
-十四,预编译命令: RAILS_ENV=production bundle exec rake assets:precompile 
+十四,预编译命令: RAILS_ENV=production bundle exec rake assets:precompile
 十五,rails中find： 根据id查找，返回一个对象
             find_by_*： 返回一个对象
 	    find_all_by_*：返回Array
@@ -34,5 +34,5 @@
 二十四,使用插件时注意文件版本是否符合当前开发版本
 二十五,解决不了的问题那就重新看官方文档
 二十六,遇到难题或者重大bug时需要做笔记,并尽量多想一些解决办法
-二十七,关键地方
+二十七,开发的过程中,每次经过重要的过程时,需要通过打印log查看具体情况,容易出现错误的情况下也可以通过打印log的方式
 
